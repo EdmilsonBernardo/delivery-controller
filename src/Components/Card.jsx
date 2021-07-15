@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Card = ({ title, description, deadline, deliveryCompleted }) => {
+const Card = ({ delivery }) => {
   return (
     <section>
-      <h2>{ title }</h2>
-      <p>{ description }</p>
-      <span>Deadline: { deadline }</span>
-      <span>Delivery Completed: { deliveryCompleted }</span>
+      <h2>{ delivery.title }</h2>
+      <p>{ delivery.description }</p>
+      <span>Deadline: { delivery.deadline }</span>
+      <span>Delivery Completed: { delivery.deliveryCompleted }</span>
     </section>
   );
 }
