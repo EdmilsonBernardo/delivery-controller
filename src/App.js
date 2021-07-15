@@ -7,6 +7,7 @@ import {
 import Login from './pages/Login';
 import DeliveryList from './pages/DeliveryList';
 import { DeliveryProvider } from './Context/DeliveryProvider';
+import Record from './pages/Record';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/delivery-list" component={DeliveryList} />
+          <Route exact path="/record" component={Record} />
         </Switch>
       </Router>
     </DeliveryProvider>
