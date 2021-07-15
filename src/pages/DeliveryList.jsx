@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import { DeliveryContext } from '../Context/DeliveryProvider';
 
 const DeliveryList = () => {
@@ -7,7 +7,7 @@ const DeliveryList = () => {
     <div>
       <p>{ deliveries }</p>
     </div>
-  )
+  );
 }
 
 export default DeliveryList;
