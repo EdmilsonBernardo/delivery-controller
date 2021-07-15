@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DeliveryContext } from '../Context/DeliveryProvider';
 
 const DeliveryList = () => {
+  const { deliveries } = useContext(DeliveryContext);
   return (
     <div>
-      <p>delivery list</p>
+      <p>{ deliveries }</p>
     </div>
   )
 }
 
-export default DeliveryList
+export default DeliveryList;
