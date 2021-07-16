@@ -6,6 +6,7 @@ const CardBoard = ({ deliveries }) => {
   if (deliveries && deliveries.length !== 0) {
     return (
       <section>
+        <h2>Your registries</h2>
         { deliveries.map(( delivery, index ) => (<Card key={ index } delivery={ delivery } />)) }
       </section>
     );

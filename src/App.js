@@ -9,6 +9,7 @@ import DeliveryList from './pages/DeliveryList';
 import { DeliveryProvider } from './Context/DeliveryProvider';
 import Record from './pages/Record';
 import './App.css';
+import Edit from './pages/Edit';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Login} />
           <Route exact path="/delivery-list" component={DeliveryList} />
           <Route exact path="/record" component={Record} />
+          <Route exact path="/edit/:id" component={Edit} />
         </Switch>
       </Router>
     </DeliveryProvider>

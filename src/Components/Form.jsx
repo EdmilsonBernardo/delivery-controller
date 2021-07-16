@@ -12,6 +12,7 @@ const Form = () => {
 
   const addDelivery = () => {
     const newDelivery = {
+      id: deliveries.length + 1,
       title: titleInput,
       description: descriptionInput,
       deadline: dateInput,
