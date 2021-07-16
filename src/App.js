@@ -8,7 +8,7 @@ import Login from './pages/Login';
 import DeliveryList from './pages/DeliveryList';
 import { DeliveryProvider } from './Context/DeliveryProvider';
 import Record from './pages/Record';
-import './App.css';
+import './sass/App.scss';
 import Edit from './pages/Edit';
 
 function App() {

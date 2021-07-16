@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { DeliveryContext } from '../Context/DeliveryProvider';
+import { MdCreate, MdDelete } from 'react-icons/md';
 
 const Card = ({ delivery }) => {
   const { deliveries, setDeliveries } = useContext(DeliveryContext);
@@ -15,23 +16,27 @@ const Card = ({ delivery }) => {
   }
 
   return (
-    <section>
+    <section className="card">
       <h2>{ delivery.title }</h2>
-      <p>{ delivery.description }</p>
+      <p>Description: { delivery.description }</p>
       <span>Deadline: { delivery.deadline }</span>
       <span>Delivery Completed: { delivery.deliveryCompleted }</span>
-      <button
-        type="button"
-        onClick={ () => redirectEditPage(delivery.id) }
-      >
-        Edit
-      </button>
-      <button
-        type="button"
-        onClick={ () => hundleClick(delivery.id) }
-      >
-        delete
-      </button>
+      <div className="buttons-container">
+        <button
+          type="button"
+          onClick={ () => redirectEditPage(delivery.id) }
+          className="btn-card"
+        >
+          Edit <MdCreate size="1.5em" />
+        </button>
+        <button
+          type="button"
+          onClick={ () => hundleClick(delivery.id) }
+          className="btn-card"
+        >
+          delete <MdDelete size="1.5em" />
+        </button>
+      </div>
     </section>
   );
 }

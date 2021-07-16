@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 import { DeliveryContext } from '../Context/DeliveryProvider';
+import { MdCheckCircle } from 'react-icons/md';
 
 const Edit = () => {
   const { id } = useParams();
@@ -11,6 +12,7 @@ const Edit = () => {
   useEffect(() => {
     const deliverySelected = deliveries.find((delivery) => delivery.id === +id);
     const obj = {
+      id: +id,
       title: deliverySelected.title,
       description: deliverySelected.description,
       deadline: deliverySelected.deadline,
@@ -26,26 +28,32 @@ const Edit = () => {
   }
 
   if (forms) return (
-    <form>
+    <form className="edit-form">
+      <h2>Edit</h2>
       <input
+        className="inputs"
         type="text"
         name="title"
         value={forms.title}
         onChange={({target}) => setForms({ ...forms, [target.name]: target.value})}
       />
       <input
+        className="inputs"
         type="text"
         name="description"
         value={forms.description}
         onChange={({target}) => setForms({ ...forms, [target.name]: target.value })}
       />
       <input
+        className="inputs"
         type="date"
         name="deadline"
         value={forms.deadline}
         onChange={({target}) => setForms({ ...forms, [target.name]: target.value})}
       />
-      <select name="deliveryCompleted" 
+      <select
+        name="deliveryCompleted"
+        className="inputs"
         value={forms.deliveryCompleted}
         onChange={({target}) => setForms({ ...forms, [target.name]: target.value})}
 
@@ -56,7 +64,13 @@ const Edit = () => {
         <option value="yes">Yes</option>
         <option value="not">Not</option>
       </select>
-      <button type="button" onClick={ saveDelivery }>Save</button>
+      <button
+        className="btn-form"
+        type="button"
+        onClick={ saveDelivery }
+      >
+        Save <MdCheckCircle size="1.5em"/>
+      </button>
     </form>
   );
   return (<p>Loading</p>);

@@ -1,0 +1,136 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $superDenseColor;
+    @include flex-center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $primaryColor;
+}
+
+.login-container {
+    text-align: center;
+    align-items: center;
+
+    input {
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        border: 2px solid rgba(0, 255, 255, 0);
+    }
+
+    input:focus {
+        border: 2px solid $primaryColor;
+    }
+
+    button {
+        height: 30px;
+        width: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.card-board {
+    position: relative;
+    background-color: $denseColor;
+    @include flex-center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 5px;
+    position: relative;
+
+    .add-del {
+        outline: none;
+        text-decoration: none;
+        color: $softColor;
+        border: none;
+        position: absolute;
+        right: 50px;
+        top: 15px;
+    }
+}
+
+.card {
+    background-color: $primaryColor;
+    @include flex-center;
+    min-width: 240px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: $denseColor;
+}
+
+.login-container, .register-form, .edit-form {
+    background-color: #40394A;
+    @include flex-form;
+}
+
+.btn-form {
+    @include flex-buttons;
+    background: $primaryColor;
+    color: $denseColor;
+    border: none;
+    border-radius: 20px;
+    padding: 5px
+}
+
+.inputs {
+    @include style-input;
+}
+
+.empty-page {
+    @include flex-center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50%;
+    height: 250px;
+
+    button {
+        background-color: $primaryColor;
+        height: 30px;
+        min-width: 80px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        padding: 0 10px;
+    }
+}
+
+.btn-register {
+    @include flex-buttons;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.board-container {
+    margin-top: 45px;
+}
+
+.buttons-container {
+    @include flex-buttons;
+    margin-top: 10px;
+    width: 100%
+}
+
+.btn-card {
+    @include flex-buttons;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,43 @@
+//COLORS
+
+$superDenseColor: #1C1427;
+$denseColor: #40394A;
+$primaryColor: #7ECA9C;
+$secondaryColor: #CCFFBD;
+$softColor: #EDEDED;
+
+//URLs
+
+$backImage: url("../images/back.jpg");
+
+//functions
+
+@mixin flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@mixin flex-form {
+    @include flex-center;
+    flex-direction: column;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0;
+    margin-top: 50%;
+}
+
+@mixin style-input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: justify;
+}
+
+@mixin flex-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -5,9 +5,7 @@ import { DeliveryContext } from '../Context/DeliveryProvider';
 const DeliveryList = () => {
   const { deliveries } = useContext(DeliveryContext);
   return (
-    <div>
-      <CardBoard deliveries={ deliveries }/> 
-    </div>
+    <CardBoard deliveries={ deliveries } />
   );
 }
 

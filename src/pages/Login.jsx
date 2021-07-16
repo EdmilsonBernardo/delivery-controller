@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FiPackage } from 'react-icons/fi';
 
 function Login() {
   const [emailInput, setEmailInput] = useState('');
@@ -16,40 +17,39 @@ function Login() {
 
   return (
     <section className="login-container">
+      <FiPackage size="4em" />
       <h2 className="title">Delivery controller</h2>
       <h4 className="login-text">Login</h4>
-      <div className="buttons">
-        <input
-          name="email"
-          type="email"
-          data-testid="email-input"
-          placeholder="Your email"
-          value={emailInput}
-          autoComplete="none"
-          onChange={(e) => setEmailInput(e.target.value)}
-          className="input-login"
-        />
-        <br />
-        <input
-          name="password"
-          type="password"
-          data-testid="password-input"
-          minLength="6"
-          placeholder="Your password"
-          onChange={(e) => setPasswordInput(e.target.value)}
-          className="input-login"
-        />
-        <Link to="/delivery-list">
-          <button
-            type="button"
-            data-testid="login-submit-btn"
-            disabled={!(checkEmail() && checkPass())}
-            onClick={handleClick}
-          >
-            Next
+      <input
+        ClassName="inputs"
+        name="email"
+        type="email"
+        data-testid="email-input"
+        placeholder="Your email"
+        value={emailInput}
+        autoComplete="none"
+        onChange={(e) => setEmailInput(e.target.value)}
+      />
+      <input
+        name="password"
+        type="password"
+        data-testid="password-input"
+        minLength="6"
+        placeholder="Your password"
+        onChange={(e) => setPasswordInput(e.target.value)}
+        ClassName="inputs"
+      />
+      <Link to="/delivery-list">
+        <button
+          type="button"
+          data-testid="login-submit-btn"
+          disabled={!(checkEmail() && checkPass())}
+          onClick={handleClick}
+          className="login-btn"
+        >
+          Next
         </button>
-        </Link>
-      </div>
+      </Link>
     </section>
   );
 }
