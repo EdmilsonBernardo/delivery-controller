@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<h1 align="center">Recipes App</h1>
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :pushpin: Index
+- [Project Media](#camera_flash-project-media)
+- [About](#monocle_face-about)
+- [Technologies](#rocket-technologies)
+- [Authors](#closed_book-authors)
+<br />
 
-## Available Scripts
+---
+# :camera_flash: Project Media
+<div align="center">
+  <img src="src/images/login.png" width="300px"/>
+  <img src="src/images/list.png" width="300px"/>
+  <img src="src/images/edit.png" width="300px"/>
+</div>
+<br />
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# :monocle_face: About
+This project was developed to simulate a delivery manager, without communication with the back-end. For its execution, I use the concept of SPA ( Single-page application ) to make the application more fluid. So I decided to use React Router to manage the routes. State management is done using the Context API, as this application is small.
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalação do projeto localmente
+After each step, there will be an example of the command to be typed to do what is being asked, in case you have difficulties and the example is not enough, don't hesitate to contact me at _devedmilson@gmail.com_.
+1. Open the terminal and create a directory in the location of your choice with the command **mkdir**:
+```javascript
+  mkdir projects-edmilson
+```
+2. Enter the directory you just created and then clone the project:
+```javascript
+  cd projects-edmilson
+  git clone git@github.com:EdmilsonBernardo/delivery-controller.git
+```
+3. install the dependencies and then run the project:
+```javascript
+  npm install
+  npm start
+```
 
-### `npm test`
+# :rocket: Technologies
+This project was developed with the following technologies: <br>
+- :heavy_check_mark: **HTML**
+- :heavy_check_mark: **CSS/SASS**
+- :heavy_check_mark: **JavaScript**
+- :heavy_check_mark: **ReactJS**
+- :heavy_check_mark: **React Hooks**
+- :heavy_check_mark: **Context API**
+<br><br>
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# :closed_book: Authors
+By [Edmilson Bernardo](https://github.com/EdmilsonBernardo).
+### :link: LinkedIn: https://www.linkedin.com/in/edmilsonbernardont/
