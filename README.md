@@ -25,7 +25,7 @@ This project was developed to simulate a delivery manager, without communication
 
 ---
 
-## Instalação do projeto localmente
+## Installation of the project locally
 After each step, there will be an example of the command to be typed to do what is being asked, in case you have difficulties and the example is not enough, don't hesitate to contact me at _devedmilson@gmail.com_.
 1. Open the terminal and create a directory in the location of your choice with the command **mkdir**:
 ```javascript
