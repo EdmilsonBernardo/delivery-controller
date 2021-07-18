@@ -12,8 +12,8 @@
 # :camera_flash: Project Media
 <div align="center">
   <img src="src/images/login.png" width="300px"/>
-  <img src="src/images/list.png" width="300px"/>
   <img src="src/images/edit.png" width="300px"/>
+  <img src="src/images/list.png" width="300px"/>
 </div>
 <br />
 
